@@ -1,0 +1,86 @@
+{
+  "uid" : "e2639a5fbcaaf0f8",
+  "name" : "allureFakeParameterizedTest()",
+  "fullName" : "io.qameta.allure.examples.junit5.AllureParameterizedTest.allureFakeParameterizedTest",
+  "historyId" : "8df3deb6e7618dc18e1fd3f5594d5be",
+  "time" : {
+    "start" : 1598358116486,
+    "stop" : 1598358116523,
+    "duration" : 37
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Step inside fake parameterized test",
+      "time" : {
+        "start" : 1598358116512,
+        "stop" : 1598358116513,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az32"
+  }, {
+    "name" : "thread",
+    "value" : "4185@fv-az32.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.AllureParameterizedTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.AllureParameterizedTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "allureFakeParameterizedTest"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.AllureParameterizedTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "fakeParam",
+    "value" : "fakeValue"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e2639a5fbcaaf0f8.json",
+  "parameterValues" : [ "fakeValue" ]
+}
