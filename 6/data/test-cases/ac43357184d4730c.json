@@ -1,0 +1,69 @@
+{
+  "uid" : "ac43357184d4730c",
+  "name" : "commonDynamicLabelTest()",
+  "fullName" : "io.qameta.allure.examples.junit5.AllureLabelsTest.commonDynamicLabelTest",
+  "historyId" : "c7db100ca2d3ad858f1e2de5aa23e1ef",
+  "time" : {
+    "start" : 1616359419734,
+    "stop" : 1616359419735,
+    "duration" : 1
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az193-323"
+  }, {
+    "name" : "thread",
+    "value" : "2944@fv-az193-323.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "commonDynamicLabelTest"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "epic",
+    "value" : "dynamic epic"
+  }, {
+    "name" : "epic",
+    "value" : "dynamic feature"
+  }, {
+    "name" : "epic",
+    "value" : "dynamic story"
+  }, {
+    "name" : "epic",
+    "value" : "dynamic owner"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ac43357184d4730c.json",
+  "parameterValues" : [ ]
+}

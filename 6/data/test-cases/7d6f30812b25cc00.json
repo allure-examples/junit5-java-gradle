@@ -1,0 +1,74 @@
+{
+  "uid" : "7d6f30812b25cc00",
+  "name" : "dynamicAttachmentTest()",
+  "fullName" : "io.qameta.allure.examples.junit5.AllureAttachmentTest.dynamicAttachmentTest",
+  "historyId" : "3d14425362ed4e17f11112726f3aa8dc",
+  "time" : {
+    "start" : 1616359419867,
+    "stop" : 1616359419870,
+    "duration" : 3
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "258780349adaca96",
+      "name" : "Dynamic attachment",
+      "source" : "258780349adaca96.txt",
+      "type" : "text/plain",
+      "size" : 18
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az193-323"
+  }, {
+    "name" : "thread",
+    "value" : "2944@fv-az193-323.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.AllureAttachmentTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.AllureAttachmentTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "dynamicAttachmentTest"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.AllureAttachmentTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7d6f30812b25cc00.json",
+  "parameterValues" : [ ]
+}
