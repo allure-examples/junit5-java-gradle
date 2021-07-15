@@ -1,0 +1,80 @@
+{
+  "uid" : "c6ecb379cd18976e",
+  "name" : "customStaticLabelTest()",
+  "fullName" : "io.qameta.allure.examples.junit5.AllureLabelsTest.customStaticLabelTest",
+  "historyId" : "df1a0acf54f52d47441ad8a3b03961cc",
+  "time" : {
+    "start" : 1626360939553,
+    "stop" : 1626360939555,
+    "duration" : 2
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "custom",
+    "value" : "static value"
+  }, {
+    "name" : "host",
+    "value" : "fv-az182-73"
+  }, {
+    "name" : "thread",
+    "value" : "2891@fv-az182-73.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "customStaticLabelTest"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.AllureLabelsTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "fc25516f16fb80ab",
+        "reportUrl" : "https://allure-examples.github.io/allure-junit5-gradle/6//#testresult/fc25516f16fb80ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616359419752,
+          "stop" : 1616359419755,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c6ecb379cd18976e.json",
+  "parameterValues" : [ ]
+}
