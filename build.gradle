@@ -1,50 +1,55 @@
 plugins {
     id 'java'
-    id 'maven'
-    id 'io.qameta.allure' version '2.8.1'
 }
 
-group 'io.qameta.allure.examples'
-version '1.3'
-
-def allureVersion = "2.13.6"
-def junit5Version = "5.6.2"
-
-compileJava.options.encoding = "UTF-8"
-compileTestJava.options.encoding = "UTF-8"
-
-allure {
-    autoconfigure = true
-    aspectjweaver = true
-    version = allureVersion
-
-    clean = true
-
-    useJUnit5 {
-        version = allureVersion
-    }
-}
-
-test {
-    ignoreFailures = true
-    useJUnitPlatform {
-
-    }
-
-    systemProperty("junit.jupiter.execution.parallel.enabled", "true")
-    systemProperty("junit.jupiter.execution.parallel.config.strategy", "dynamic")
-    systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
+wrapper {
+    gradleVersion = '8.4'
 }
 
 repositories {
     mavenCentral()
-    mavenLocal()
+}
+
+group = 'com.example.junit5'
+version = '1.0-SNAPSHOT'
+
+def allureVersion = '2.24.0'
+def aspectJVersion = '1.9.20.1'
+def kotlinVersion = '1.9.20'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs.add('-parameters')
+}
+
+configurations {
+    agent {
+        canBeResolved = true
+        canBeConsumed = true
+    }
 }
 
 dependencies {
-    testImplementation("io.qameta.allure:allure-java-commons:$allureVersion")
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5Version")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junit5Version")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:$junit5Version")
+    testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
+    testImplementation "io.qameta.allure:allure-junit5"
+
+    testImplementation platform("org.junit:junit-bom:5.10.1")
+    testImplementation "org.junit.jupiter:junit-jupiter-api"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
+
+    testImplementation "org.slf4j:slf4j-simple:2.0.9"
+}
+
+test {
+    ignoreFailures = true
+    useJUnitPlatform()
+    jvmArgs = [ "-javaagent:${configurations.agent.singleFile}" ]
 }
